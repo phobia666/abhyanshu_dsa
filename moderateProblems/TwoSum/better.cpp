@@ -1,16 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
+ 
+//nlogn time complexity
 
-//nsquare time complexity
 vector<int> getIndexes(vector<int> vec, int k){
+    map<int, int> mp;
 
     for(int i = 0; i < vec.size(); i++){
-        for(int j = i; j < vec.size(); j++){
-            if(i == j) continue;
-            if(vec[i] + vec[j] == k){
-                return {i, j};
-            }
+        auto it = mp.find(k - vec[i]);
+        if(it != mp.end()){
+            return {it->second, i};
         }
+        mp[vec[i]] = i;
     }
     return {-1, -1};
 }
