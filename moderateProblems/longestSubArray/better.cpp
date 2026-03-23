@@ -5,13 +5,13 @@ using namespace std;
 
 int bet(vector<int> nums, int k){
     map<int, int> mp;
-    int i = 0, sum = 0, len = 0;
+    int i = 0, sum = 0, len = INT_MIN;
     int n = nums.size();
     while(i < n){
         sum += nums[i];
         mp[sum] = i;
 
-        if(sum == k) len = sum;
+        if(sum == k) len = i + 1;
 
         auto it = mp.find(sum - k);
         if(it != mp.end()){

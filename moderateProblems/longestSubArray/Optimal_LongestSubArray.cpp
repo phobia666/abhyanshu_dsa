@@ -8,6 +8,7 @@ int opt(vector<int> nums, int k){
     int n = nums.size();
 
     while(right < n){
+        if(right < n) sum += nums[right];
         while(left <= right && sum > k){
             sum -= nums[left];
             left++;
@@ -16,13 +17,12 @@ int opt(vector<int> nums, int k){
             maxLen = max(maxLen, right - left + 1);
         }
         right++;
-        if(right < n) sum += nums[right];
     }
     return maxLen;
 }
 
 int main(){
-    vector<int> nums = {1, 2,   3, 1, 4, 1, 4, 2, 3};
+    vector<int> nums = {1, 2, 3, 1, 1, 1, 1, 4, 2, 3};
     int k = 6;
     cout << opt(nums, k);
 }
