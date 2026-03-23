@@ -2,25 +2,27 @@
 using namespace std;
 
 int opt(vector<int> nums, int k){
-    int j = 0;
+    int left = 0, right = 0;
     int sum = 0;
     int maxLen = 0;
+    int n = nums.size();
 
-    for(int i = 0; i < nums.size(); i++){
-        
-        if(sum > k){
-            sum -= nums[j];
-            j++;
+    while(right < n){
+        while(left <= right && sum > k){
+            sum -= nums[left];
+            left++;
         }
         if(sum == k){
-            maxLen = max(maxLen, i - j);
+            maxLen = max(maxLen, right - left + 1);
         }
-        sum += nums[i];
+        right++;
+        if(right < n) sum += nums[right];
     }
+    return maxLen;
 }
 
 int main(){
-    vector<int> nums = {1, 2, 3, 1, 1, 1, 1, 4, 2, 3};
+    vector<int> nums = {1, 2,   3, 1, 4, 1, 4, 2, 3};
     int k = 6;
     cout << opt(nums, k);
 }
