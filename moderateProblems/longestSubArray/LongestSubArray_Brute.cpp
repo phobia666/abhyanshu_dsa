@@ -11,7 +11,7 @@ int maxLength(int arr[], int n){
         sum = 0;
         j = i;
         while(sum < n){
-            sum += arr[j];
+            sum += arr[j]; 
             j++;
             counter++;
         }
