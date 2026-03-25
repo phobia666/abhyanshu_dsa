@@ -2,6 +2,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// TC --> O(N)
+// SC --> O(1)
+
 void sort(int arr[]){
     int n = 11;
     int low = 0, mid = 0, high = n - 1;
