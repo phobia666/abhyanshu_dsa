@@ -14,6 +14,7 @@ int maxSub(vector<int> vec){
             start = i;
         }
         sum += vec[i];
+        
 
         if(sum > maxSum){
             maxSum = sum;
