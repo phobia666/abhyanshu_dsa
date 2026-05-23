@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/ab_software/abhyanshu_dsa/abhyanshu_dsa/moderateProblems",
-      "program": "d:/ab_software/abhyanshu_dsa/abhyanshu_dsa/moderateProblems/build/Debug/outDebug",
+      "cwd": "d:/ab_software/abhyanshu_dsa/abhyanshu_dsa/moderateProblems/05_maxSubarray",
+      "program": "d:/ab_software/abhyanshu_dsa/abhyanshu_dsa/moderateProblems/05_maxSubarray/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

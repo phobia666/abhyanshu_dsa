@@ -25,7 +25,7 @@ int maxSub(vector<int> vec){
             sum = 0;
         }
     }
-
+// for printing the subArrays
     for(int i = startSub; i <= endSub; i++){
         cout << vec[i] << " ";
     }
