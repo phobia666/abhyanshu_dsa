@@ -3,6 +3,7 @@ using namespace std;
 
 //optimal
 //returning the leaders in the array 
+//leader is that element after which every other element is smaller
 //TC: O(N) SC: O(N) for storing the ans
 
 vector<int> lead(vector<int> vec){

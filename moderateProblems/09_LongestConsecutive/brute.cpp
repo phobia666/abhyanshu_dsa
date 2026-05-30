@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
+//returning the length of the longest sequence of consecutive numbers in the array
+//TC: O(N2) SC: O(1)
+
 int LongConsec(vector<int> vec){
     int left, right, index, length, maxLength = 1;
 

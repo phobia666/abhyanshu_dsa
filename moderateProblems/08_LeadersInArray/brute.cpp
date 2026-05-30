@@ -2,7 +2,8 @@
 using namespace std;
 
 //brute
-//returning the leaders in the array 
+//returning the leaders in the array
+//leader is that element after which every other element is smaller
 //TC: O(N2) SC: O(N) for storing the ans
 
 vector<int> lead(vector<int> vec){

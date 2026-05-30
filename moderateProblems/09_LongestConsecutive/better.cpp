@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//returning the length of the longest sequence of consecutive numbers in the array
+//TC: O(NlogN) SC: O(1)
+
 int LongConsec(vector<int>& vec){
     sort(vec.begin(), vec.end());
     int length = 1;
