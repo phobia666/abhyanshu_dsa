@@ -40,7 +40,7 @@ int main(){
     int len = arr.size();
     vector<int> newArr = spiral(arr, len);
 
-    for(int i = 0; i < newArr.size(); i++){
+    for(int i = 0; i < len * len; i++){
         cout << newArr[i] << " ";
     }
 }

@@ -24,7 +24,7 @@ int bet(vector<int> nums, int k){
 }
 
 int main(){
-    vector<int> nums = {1, 2, 3, 1, 1, 1, 1, 4, 2, 3};
+    vector<int> nums = {1, 2, 3, 1, 1, 1, 1 , 4, 2, 3};
     int k = 6;
     cout << bet(nums, k);
 }
